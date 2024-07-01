@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Profile Section -->
+  <section id="profile" class="container">
+    <div class="section__text">
+      <h1 class="title">Ilias Jaddi</h1>
+      <p class="section__text__p2">Economics and AI/ML Student</p>
+      <div class="location-container">
+        <span class="location-text">
+          Barcelona, Spain </span> <span class="location-flag">🇪🇸</span>
+      </div>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="displayResume()">Display Resume</button>
+        <button class="btn btn-color-1" onclick="showContactInfo()">Contact Info</button>
+      </div>
+    </div>
+    <div class="section__pic-container">
+      <img src="./assets/iliasjdprofile.pneg" alt="Ilias Jaddi profile picture">
+    </div>
+  </section>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav id="main-nav" class="container">
+    <ul class="nav-links">
+      <li><a href="#about" onclick="showSection('about')">About</a></li>
+      <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+      <li><a href="#learning" onclick="showSection('learning')">Learning AI/ML</a></li>
+      <li><a href="#reading" onclick="showSection('reading')">Bookshelf</a></li>
+    </ul>
+  </nav>
+
+  <!-- Container for dynamic content -->
+  <div id="content-wrapper" class="container">
+    <div class="content-container">
+      <!-- About Section -->
+      <section id="about" class="content-section">
+        <h1 class="title2">About Me</h1>
+        <div class="text-container">
+          <p>Welcome to my portfolio! I'm Ilias Jaddi...</p>
+        </div>
+
+        <!-- Work Experience Section within About Section -->
+        <div class="work-experience-container">
+          <br>
+          <h1 class="title2">Work Experience</h1>
+          <div class="experience-details-container">
+            <!-- Experience details -->
+
+            <!-- Unifarco España -->
+            <div class="experience-item">
+              <h2>Web Development and Data Analysis Intern</h2>
+              <div class="experience-header">
+                <p><strong>Unifarco Spain</strong></p>
+                <p class="experience-period">Mar 2024 - Present</p>
+              </div>
+              <ul>
+                <p class="experience-description">My responsibilities included conducting market analysis of client
+                  prices and competitor offerings,
+                  evaluating over 200 prospect pharmacies for suitability, managing and maintaining MySQL databases,
+                  developing and updating CRM systems, and automating tasks using Python. Additionally, I created
+                  internal tools using HTML, CSS, and JavaScript to enhance client relationship management and
+                  streamline internal processes.</p>
+              </ul>
+            </div>
+
+            <!-- Deutsche Bank -->
+            <div class="experience-item">
+              <h2>Internship Trainee</h2>
+              <div class="experience-header">
+                <p><strong>Deutsche Bank</strong></p>
+                <p class="experience-period">Dec 2022 - Sep 2023</p>
+              </div>
+              <ul>
+                <p class="experience-description">Managed check remittances and reviewed individual clients to ensure
+                  compliance with anti-fraud and
+                  money laundering policies. I also analyzed over 300 client profiles to detect suspicious transactions
+                  and managed and renewed bank data related to associated accounts of individuals and small/medium
+                  companies.</p>
+              </ul>
+            </div>
+
+            <!-- Ennova UB -->
+            <div class="experience-item">
+              <h2>Co-Founder</h2>
+              <div class="experience-header">
+                <p><strong>Ennova UB</strong></p>
+                <p class="experience-period">Feb 2021 - Sep 2022</p>
+              </div>
+              <ul>
+                <p class="experience-description">Pioneered the first association at the UB focused on change and
+                  entrepreneurship. I led the
+                  Communications Department, overseeing social media management and content creation, driving the
+                  organization's outreach and engagement efforts.</p>
+              </ul>
+            </div>
+
+            <!-- UserTesting -->
+            <div class="experience-item">
+              <h2>Product Reviewer and Customer Experience Advisor</h2>
+              <div class="experience-header">
+                <p><strong>UserTesting</strong></p>
+                <p class="experience-period">Nov 2020 - Jan 2022</p>
+              </div>
+              <ul>
+                <p class="experience-description">In this remote role, I addressed customer pain points, advised
+                  companies on improving their website
+                  interfaces, and conducted 30 to 60-minute sessions with company representatives to discuss potential
+                  customer issues and suggest improvements to enhance the user experience.</p>
+              </ul>
+            </div>
+
+            <!-- Lionbridge -->
+            <div class="experience-item">
+              <h2>Data Analyst</h2>
+              <div class="experience-header">
+                <p><strong>Lionbridge</strong></p>
+                <p class="experience-period">Nov 2020 - Sep 2021</p>
+              </div>
+              <ul>
+                <p class="experience-description">I worked remotely to evaluate Microsoft Bing search results for
+                  accuracy and relevance. I conducted
+                  research and provided feedback to measure the accuracy, usefulness, and relevance of web search
+                  results, contributing to the enhancement of the search engine's performance.</p>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projects Section -->
+      <section id="projects" class="content-section">
+        <div class="projects-header">
+          <h1 class="title2">Projects</h1>
+          <p>Click titles to check GitHub repository</p>
+        </div>
+        <div class="project-boxes">
+          <div class="project-box">
+            <div class="project-box-header">
+              <a href="https://github.com/iliasjaddi/PDFAlive" target="_blank" class="box-content-header">PDFAlive</a>
+              <div class="ring-container2">
+                <div class="ringring"></div>
+                <div class="circle"></div>
+              </div>
+            </div>
+            <div class="project-box-footer">
+              <p>
+                A tool for PDF interactions using OpenAI's GPT. Built with Next.js 13, Vercel's AI SDK, Langchain, and
+                PineconeDB, it enhances learning through conversational PDF exploration.
+              </p>
+            </div>
+          </div>
+          <div class="project-box">
+            <div class="project-box-header">
+              <a href="https://github.com/iliasjaddi/download-paid-substacks" target="_blank"
+                class="box-content-header">Substack Downloader</a>
+              <div class="ring-container2">
+                <div class="ringring"></div>
+                <div class="circle"></div>
+              </div>
+            </div>
+            <div class="project-box-footer">
+              <p>
+                Automated PDF generation from URLs using Node.js and Puppeteer. Simplifies archiving, creating digital
+                records, and saving web content for offline access.
+              </p>
+            </div>
+          </div>
+          <div class="project-box">
+            <div class="project-box-header">
+              <a href="https://github.com/iliasjaddi/Kanye-West-Random-Quotes" target="_blank"
+                class="box-content-header">Kanye West Quote Generator</a>
+              <div class="ring-container2">
+                <div class="ringring"></div>
+                <div class="circle"></div>
+              </div>
+            </div>
+            <div class="project-box-footer">
+              <p>
+                A web app that displays random inspirational quotes from Kanye West's Twitter, providing fresh quotes
+                with each click.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- What I'm Learning Section -->
+      <section id="learning" class="content-section">
+        <h1 class="title2">How I'm self-teaching AI/ML</h1>
+        <p class="learning-details"> This is the roadmap I'm following to learn the foundations of AI/ML along with
+          some Data Science.</p>
+        <!-- Learning details -->
+        <!-- Using <object> tag (preferred method) -->
+        <div class="learning-details-container">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="177 192 1251 2900"
+            style="font-family: manrope">
+            <style>
+              /* Style for the checkbox in the "done" state */
+              .clickable-group.done[data-group-id^="check:"] rect {
+                fill: grey;
+              }
+
+              /* Style for the title text in the "done" state */
+              .clickable-group.done[data-group-id^="check:"]+g text {
+                text-decoration: line-through;
+                text-decoration-thickness: 2px;
+                /* Adjust the thickness value as needed */
+              }
+            </style>
+            <path d="M346 225 Q345.98605779817416 422.82921687293685 346 480.5703621905065" fill="none" stroke="white"
+              stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="undefined">
+            </path>
+
+            <path d="M1415.5477088002983 480.5703621905065Q923.0611984652453 480.4213663276677 306 480.5703621905065"
+              fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="undefined"></path>
+            <rect x="279.35" y="458.35" width="213.3" height="47.3" rx="2" fill="black" fill-opacity="1" stroke="white"
+              stroke-width="2.7"></rect><text x="336" y="488.6625005086263" fill="white" font-style="normal"
+              font-weight="normal" font-size="17px">
+              <tspan>Mathematics</tspan>
+            </text>
+            <g class="clickable-group done" data-group-id="check:linear-algebra-calc-mathana">
+              <rect x="235.35" y="547.35" width="27.3" height="27.3" rx="2" fill="black" fill-opacity="1" stroke="white"
+                stroke-width="2.7"></rect>
+            </g>
+            <g class="clickable-group done" data-group-id="linear-algebra-calc-mathana"><text x="279"
+                y="568.2799997965495" fill="white" font-style="normal" font-weight="normal" font-size="20px">
+                <tspan>Linear Algebra, Calculus, Mathematical Analysis</tspan>
+              </text></g>
+            <g class="clickable-group" data-group-id="ext_link:imp.i384100.net/baqMYv">
+              <rect x="280.35" y="584.35" width="492.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="299" y="613.6625005086263" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Mathematics for Machine Learning</tspan>
+              </text><text x="691" y="613.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Courses</tspan>
+              </text>
+            </g>
+            <g class="clickable-group done" data-group-id="check:diff-calculus">
+              <rect x="233.35" y="651.35" width="27.3" height="27.3" rx="2" fill="black" fill-opacity="1" stroke="white"
+                stroke-width="2.7"></rect>
+            </g>
+            <g class="clickable-group done" data-group-id="diff-calculus"><text x="278" y="672.2899998982747"
+                fill="white" font-style="normal" font-weight="normal" font-size="20px">
+                <tspan>Differential Calculus</tspan>
+              </text></g>
+            <g class="clickable-group" data-group-id="ext_link:imp.i384100.net/LX5M7M">
+              <rect x="279.35" y="689.35" width="492.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="294" y="718.6965001424154" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Coursera: Algebra and Differential Calculus</tspan>
+              </text><text x="699" y="718.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Course</tspan>
+              </text>
+            </g>
+            <rect x="906.35" y="455.35" width="151.3" height="47.3" rx="2" fill="black" fill-opacity="1" stroke="white"
+              stroke-width="2.7"></rect><text x="948" y="484.6625005086263" fill="white" font-style="normal"
+              font-weight="normal" font-size="17px">
+              <tspan>Statistics</tspan>
+            </text>
+            <g class="clickable-group done" data-group-id="check:stats-clt">
+              <rect x="859.35" y="547.35" width="27.3" height="27.3" rx="2" fill="black" fill-opacity="1" stroke="white"
+                stroke-width="2.7"></rect>
+            </g>
+            <g class="clickable-group done" data-group-id="stats-clt"><text x="903" y="568.25" fill="white"
+                font-style="normal" font-weight="normal" font-size="20px">
+                <tspan>Statistics, CLT</tspan>
+              </text></g>
+            <g class="clickable-group" data-group-id="ext_link:imp.i384100.net/3eRv4v">
+              <rect x="904.35" y="583.35" width="464.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="919" y="612.6625005086263" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Coursera: Introduction to Statistics</tspan>
+              </text><text x="1300" y="612.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Course</tspan>
+              </text>
+            </g>
+            <g class="clickable-group done" data-group-id="check:hypothesis-testing">
+              <rect x="859.35" y="647.35" width="27.3" height="27.3" rx="2" fill="black" fill-opacity="1" stroke="white"
+                stroke-width="2.7"></rect>
+            </g>
+            <g class="clickable-group done" data-group-id="hypothesis-testing"><text x="903" y="668.25" fill="white"
+                font-style="normal" font-weight="normal" font-size="20px">
+                <tspan>Hypothesis Testing</tspan>
+              </text></g><text x="655" y="488.1540003458659" fill="white" font-style="normal" font-weight="normal"
+              font-size="28px">
+              <tspan>&gt;</tspan>
+            </text>
+            <g class="clickable-group" data-group-id="ext_link:imp.i384100.net/vN0JAA">
+              <rect x="905.35" y="687.35" width="464.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="920" y="716.6625005086263" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Coursera: Hypothesis Testing</tspan>
+              </text><text x="1301" y="716.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Course</tspan>
+              </text>
+            </g>
+            <g class="clickable-group done" data-group-id="check:probability-sampling">
+              <rect x="859.35" y="751.35" width="27.3" height="27.3" rx="2" fill="black" fill-opacity="1" stroke="white"
+                stroke-width="2.7"></rect>
+            </g>
+            <g class="clickable-group done" data-group-id="probability-sampling"><text x="903" y="772.259999593099"
+                fill="white" font-style="normal" font-weight="normal" font-size="20px">
+                <tspan>Probability and Sampling</tspan>
+              </text></g>
+            <g class="clickable-group" data-group-id="ext_link:imp.i384100.net/daDM6Q">
+              <rect x="905.35" y="793.35" width="464.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="920" y="822.6710001627604" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Coursera: Probability and Statistics</tspan>
+              </text><text x="1302" y="822.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Course</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="check:ab-testing">
+              <rect x="859.35" y="863.35" width="27.3" height="27.3" rx="2" fill="black" fill-opacity="1" stroke="white"
+                stroke-width="2.7"></rect>
+            </g>
+            <g class="clickable-group" data-group-id="ab-testing"><text x="903" y="884.2799997965495" fill="white"
+                font-style="normal" font-weight="normal" font-size="20px">
+                <tspan>AB Testing</tspan>
+              </text></g>
+            <g class="clickable-group"
+              data-group-id="ext_link:vkteam.medium.com/practitioners-guide-to-statistical-tests-ed2d580ef04f#1e3b">
+              <rect x="905.35" y="905.35" width="464.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="920" y="935.2915003458659" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Practitioner’s Guide to Statistical Tests</tspan>
+              </text><text x="1310" y="934.6880004882812" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Article</tspan>
+              </text>
+            </g>
+            <g class="clickable-group"
+              data-group-id="ext_link:towardsdatascience.com/step-by-step-for-planning-an-a-b-test-ef3c93143c0b">
+              <rect x="905.35" y="959.35" width="464.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="918" y="988.6965001424154" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Experiment Design Article</tspan>
+              </text><text x="1311" y="988.6880004882812" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Article</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="check:increasing-test-sensitivity">
+              <rect x="859.35" y="1032.35" width="27.3" height="27.3" rx="2" fill="black" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect>
+            </g>
+            <g class="clickable-group" data-group-id="increasing-test-sensitivity"><text x="903" y="1053.25"
+                fill="white" font-style="normal" font-weight="normal" font-size="20px">
+                <tspan>Increasing Test Sensitivity</tspan>
+              </text></g>
+            <g class="clickable-group"
+              data-group-id="ext_link:splitmetrics.com/resources/minimum-detectable-effect-mde/">
+              <rect x="904.35" y="1077.35" width="464.3" height="40.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="919" y="1103.6965001424153" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Minimum Detectable Effect</tspan>
+              </text><text x="1308" y="1103.6880004882812" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Article</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="ext_link:kdd.org/kdd2016/papers/files/adp0945-xieA.pdf">
+              <rect x="904.35" y="1125.35" width="464.3" height="40.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="920" y="1151.6710001627605" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Paper: Improving Test Sensitivity</tspan>
+              </text><text x="1311" y="1151.6710001627605" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Paper</tspan>
+              </text>
+            </g>
+            <g class="clickable-group"
+              data-group-id="ext_link:exp-platform.com/Documents/2013-02-CUPED-ImprovingSensitivityOfControlledExperiments.pdf">
+              <rect x="904.35" y="1174.35" width="464.3" height="40.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="920" y="1200.6965001424153" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Paper: Improving Sensitivity (CUPED)</tspan>
+              </text><text x="1310" y="1200.6710001627605" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Paper</tspan>
+              </text>
+            </g>
+            <g class="clickable-group"
+              data-group-id="ext_link:booking.ai/how-booking-com-increases-the-power-of-online-experiments-with-cuped-995d186fff1d">
+              <rect x="904.35" y="1223.35" width="464.3" height="40.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="918" y="1249.6965001424153" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>CUPED at Booking.com</tspan>
+              </text><text x="1307" y="1249.6880004882812" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Article</tspan>
+              </text>
+            </g>
+            <g class="clickable-group"
+              data-group-id="ext_link:doordash.engineering/2020/06/08/improving-experimental-power-through-control-using-predictions-as-covariate-cupac/">
+              <rect x="904.35" y="1271.35" width="464.3" height="40.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="917" y="1297.6965001424153" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Doordash: CUPAC</tspan>
+              </text><text x="1307" y="1297.6880004882812" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Article</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="check:ratio-metrics">
+              <rect x="859.35" y="1392.35" width="27.3" height="27.3" rx="2" fill="black" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect>
+            </g>
+            <g class="clickable-group done" data-group-id="ratio-metrics"><text x="903" y="1415.2199996948243"
+                fill="white" font-style="normal" font-weight="normal" font-size="20px">
+                <tspan>Ratio Metrics</tspan>
+              </text></g>
+            <g class="clickable-group" data-group-id="ext_link:arxiv.org/pdf/1803.06336.pdf">
+              <rect x="904.35" y="1436.35" width="456.3" height="48.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="919" y="1465.6965001424153" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Microsoft: Delta Method in Metric Analytics</tspan>
+              </text><text x="1295" y="1465.6710001627605" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Paper</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="ext_link:stat.cmu.edu/~hseltman/files/ratio.pdf">
+              <rect x="904.35" y="1492.35" width="456.3" height="48.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="919" y="1521.6710001627605" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Paper: Ratio Metrics</tspan>
+              </text><text x="1302" y="1521.6710001627605" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Paper</tspan>
+              </text>
+            </g>
+            <path d="M1415 480.7450760601181Q1414.8533563300543 965.4567177008937 1415 1572.776390878193" fill="none"
+              stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="undefined"></path><text x="1224" y="487.1540003458659" fill="white" font-style="normal"
+              font-weight="normal" font-size="28px">
+              <tspan>&gt;</tspan>
+            </text><text x="1409" y="610.490000406901" fill="white" font-style="normal" font-weight="normal"
+              font-size="28px">
+              <tspan>v</tspan>
+            </text><text x="1409" y="1200.4900004069011" fill="white" font-style="normal" font-weight="normal"
+              font-size="28px">
+              <tspan>v</tspan>
+            </text>
+            <path
+              d="M1415.5477088002983 1572.5703621905066Q1153.2272295931516 1572.491000288567 824.5526651438306 1572.5703621905066"
+              fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="undefined"></path><text x="1134" y="1579.4060002644858" fill="white" font-style="normal"
+              font-weight="normal" font-size="28px">
+              <tspan>&lt;</tspan>
+            </text>
+            <path d="M825 833.9943599119874Q824.9007924893355 1161.911926180673 825 1572.776390878193" fill="none"
+              stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="undefined"></path><text x="816" y="1247.5520009358725" fill="white" font-style="normal"
+              font-weight="normal" font-size="32px">
+              <tspan>^</tspan>
+            </text>
+            <path
+              d="M825.8303948146445 833.5703621905066Q542.7532477210427 833.4847206086641 188.0716067460167 833.5703621905066"
+              fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="undefined"></path><text x="619" y="840.4060002644857" fill="white" font-style="normal"
+              font-weight="normal" font-size="28px">
+              <tspan>&lt;</tspan>
+            </text>
+            <rect x="270.35" y="809.35" width="166.3" height="47.3" rx="2" fill="black" fill-opacity="1" stroke="white"
+              stroke-width="2.7"></rect><text x="301" y="839.6370005289714" fill="white" font-style="normal"
+              font-weight="normal" font-size="17px">
+              <tspan>Econometrics</tspan>
+            </text>
+            <g class="clickable-group done" data-group-id="check:econometrics-pre-req">
+              <rect x="225.35" y="898.35" width="27.3" height="27.3" rx="2" fill="black" fill-opacity="1" stroke="white"
+                stroke-width="2.7"></rect>
+            </g>
+            <g class="clickable-group done" data-group-id="econometrics-pre-req"><text x="269" y="919.259999593099"
+                fill="white" font-style="normal" font-weight="normal" font-size="20px">
+                <tspan>Pre-requisites of Econometrics</tspan>
+              </text></g>
+            <g class="clickable-group" data-group-id="ext_link:bookdown.org/ts_robinson1994/10EconometricTheorems/">
+              <rect x="270.35" y="935.35" width="492.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="289" y="964.6625005086263" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Fundamentals of econometrics</tspan>
+              </text><text x="710" y="964.5860005696615" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Book</tspan>
+              </text>
+            </g>
+            <g class="clickable-group done" data-group-id="check:regression-time-series-fitting-distr">
+              <rect x="225.35" y="1008.35" width="27.3" height="27.3" rx="2" fill="black" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect>
+            </g>
+            <g class="clickable-group done" data-group-id="regression-time-series-fitting-distr"><text x="269"
+                y="1029.35" fill="white" font-style="normal" font-weight="normal" font-size="20px">
+                <tspan>Regressions, time series, fitting distributions</tspan>
+              </text></g>
+            <g class="clickable-group"
+              data-group-id="ext_link:academia.edu/33062577/Dougherty_Intro_to_Econometrics_4th_ed_small">
+              <rect x="270.35" y="1048.35" width="492.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="289" y="1077.6370005289714" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Intro to Econometrics</tspan>
+              </text><text x="710" y="1077.5860005696616" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Book</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="ext_link:imp.i384100.net/k0krYL">
+              <rect x="270.35" y="1103.35" width="492.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="289" y="1132.6370005289714" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Coursera: Econometrics</tspan>
+              </text><text x="693" y="1132.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Course</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="ext_link:kaggle.com/learn/time-series">
+              <rect x="270.35" y="1178.35" width="492.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="289" y="1207.6625005086264" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Kaggle — Learn Time Series</tspan>
+              </text><text x="694" y="1207.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Course</tspan>
+              </text>
+            </g>
+            <g class="clickable-group"
+              data-group-id="ext_link:kaggle.com/code/jagangupta/time-series-basics-exploring-traditional-ts#Hierarchical-time-series">
+              <rect x="270.35" y="1232.35" width="492.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="289" y="1261.6625005086264" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Kaggle — Time Series Basics</tspan>
+              </text><text x="692" y="1261.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Tutorial</tspan>
+              </text>
+            </g>
+            <g class="clickable-group"
+              data-group-id="ext_link:machinelearningmastery.com/arima-for-time-series-forecasting-with-python">
+              <rect x="270.35" y="1286.35" width="492.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="289" y="1315.6880004882812" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>ARIMA Model for Time Series</tspan>
+              </text><text x="688" y="1315.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Tutorial</tspan>
+              </text>
+            </g>
+            <g class="clickable-group"
+              data-group-id="ext_link:machinelearningmastery.com/time-series-forecasting-methods-in-python-cheat-sheet/">
+              <rect x="270.35" y="1340.35" width="492.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="289" y="1369.6625005086264" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Time Series Models</tspan>
+              </text><text x="688" y="1369.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Tutorial</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="ext_link:github.com/stalkermustang/bcdc_ds_takehome">
+              <rect x="270.35" y="1394.35" width="492.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="289" y="1423.6625005086264" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Forecasting Task with Solution</tspan>
+              </text><text x="597" y="1423.6710001627605" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>OpenSource Project</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="ext_link:imp.i384100.net/9g97Ke">
+              <rect x="270.35" y="1465.35" width="492.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="289" y="1494.6370005289714" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Coursera: Linear Regression</tspan>
+              </text><text x="689" y="1494.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Course</tspan>
+              </text>
+            </g>
+            <path d="M189 834.7450760601181Q188.89213001851044 1191.295316728132 189 1638.0351039153877" fill="none"
+              stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="undefined"></path><text x="182" y="1008.490000406901" fill="white" font-style="normal"
+              font-weight="normal" font-size="28px">
+              <tspan>v</tspan>
+            </text><text x="182" y="1303.4900004069011" fill="white" font-style="normal" font-weight="normal"
+              font-size="28px">
+              <tspan>v</tspan>
+            </text>
+            <path
+              d="M1410.5693816144649 1640.5703621905066Q868.4582140886064 1640.4063529852492 189.2197786900026 1640.5703621905066"
+              fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="undefined"></path>
+            <rect x="254.35" y="1616.35" width="180.3" height="47.3" rx="2" fill="black" fill-opacity="1" stroke="white"
+              stroke-width="2.7"></rect><text x="317" y="1646.6370005289714" fill="white" font-style="normal"
+              font-weight="normal" font-size="17px">
+              <tspan>Coding</tspan>
+            </text>
+            <g class="clickable-group done" data-group-id="check:learn-python">
+              <rect x="212.35" y="1706.35" width="27.3" height="27.3" rx="2" fill="black" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect>
+            </g>
+            <g class="clickable-group" data-group-id="learn-python"><text x="256" y="1727.2599995930989" fill="white"
+                font-style="normal" font-weight="normal" font-size="20px">
+                <tspan>Learn Python Programming Language</tspan>
+              </text></g>
+            <g class="clickable-group" data-group-id="ext_link:kaggle.com/learn/python">
+              <rect x="256.35" y="1755.35" width="441.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="275" y="1784.6710001627605" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Learn Python - Kaggle</tspan>
+              </text><text x="626" y="1784.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Course</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="ext_link:developers.google.com/edu/python">
+              <rect x="256.35" y="1809.35" width="441.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="275" y="1838.6795003255208" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Google's Python Class</tspan>
+              </text><text x="622" y="1838.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Course</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="ext_link:leetcode.com/explore/learn/">
+              <rect x="256.35" y="1927.35" width="438.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="275" y="1956.6880004882812" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Algorithmic Exercises</tspan>
+              </text><text x="520" y="1956.6625005086264" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Tutorial + Challenges</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="ext_link:leetcode.com/studyplan">
+              <rect x="256.35" y="1982.35" width="441.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="275" y="2011.6710001627605" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Study Plans - Leetcode</tspan>
+              </text><text x="595" y="2011.6625005086264" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Challenges</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="ext_link:imp.i384100.net/5gqv4n">
+              <rect x="256.35" y="2038.35" width="441.3" height="48.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="275" y="2067.6880004882814" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Algorithms Specialization</tspan>
+              </text><text x="626" y="2067.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Course</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="check:learn-dsa">
+              <rect x="212.35" y="1886.35" width="27.3" height="27.3" rx="2" fill="black" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect>
+            </g>
+            <g class="clickable-group" data-group-id="learn-dsa"><text x="256" y="1907.2899998982748" fill="white"
+                font-style="normal" font-weight="normal" font-size="20px">
+                <tspan>Data Structures and Algorithms (Python)</tspan>
+              </text></g>
+            <g class="clickable-group" data-group-id="check:learn-sql">
+              <rect x="212.35" y="2114.35" width="27.3" height="27.3" rx="2" fill="black" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect>
+            </g>
+            <g class="clickable-group" data-group-id="learn-sql"><text x="256" y="2135.3" fill="white"
+                font-style="normal" font-weight="normal" font-size="20px">
+                <tspan>Learn SQL</tspan>
+              </text></g>
+            <g class="clickable-group" data-group-id="ext_link:sqltutorial.org">
+              <rect x="256.35" y="2155.35" width="441.3" height="48.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="275" y="2184.705000305176" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>SQL Tutorial</tspan>
+              </text><text x="621" y="2185.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Course</tspan>
+              </text>
+            </g><text x="613" y="1648.1540003458658" fill="white" font-style="normal" font-weight="normal"
+              font-size="28px">
+              <tspan>&gt;</tspan>
+            </text>
+            <rect x="812.35" y="1615.35" width="298.3" height="47.3" rx="2" fill="black" fill-opacity="1" stroke="white"
+              stroke-width="2.7"></rect><text x="840" y="1645.6965001424153" fill="white" font-style="normal"
+              font-weight="normal" font-size="17px">
+              <tspan>Exploratory Data Analysis (EDA)</tspan>
+            </text>
+            <g class="clickable-group" data-group-id="check:data-understanding">
+              <rect x="765.35" y="1706.35" width="27.3" height="27.3" rx="2" fill="black" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect>
+            </g>
+            <g class="clickable-group" data-group-id="data-understanding"><text x="809" y="1727.2899998982748"
+                fill="white" font-style="normal" font-weight="normal" font-size="20px">
+                <tspan>Data understanding, Data Analysis, Vizualisation</tspan>
+              </text></g>
+            <g class="clickable-group" data-group-id="ext_link:imp.i384100.net/AWAv4R">
+              <rect x="811.35" y="1750.35" width="543.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="830" y="1779.6965001424153" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Exploratory Data Analysis With Python and Pandas</tspan>
+              </text><text x="1288" y="1779.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Course</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="ext_link:imp.i384100.net/GmQMLE">
+              <rect x="812.35" y="1805.35" width="543.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="831" y="1834.6965001424153" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Exploratory Data Analysis for Machine Learning</tspan>
+              </text><text x="1287" y="1834.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Course</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="ext_link:imp.i384100.net/ZQmMgR">
+              <rect x="812.35" y="1861.35" width="543.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="831" y="1890.6965001424153" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Exploratory Data Analysis with Seaborn</tspan>
+              </text><text x="1287" y="1890.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Course</tspan>
+              </text>
+            </g><text x="1247" y="1648.1540003458658" fill="white" font-style="normal" font-weight="normal"
+              font-size="28px">
+              <tspan>&gt;</tspan>
+            </text>
+            <path d="M1411 1639.7450760601182Q1410.9492211300083 1807.5880483714566 1411 2017.8869773267736" fill="none"
+              stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="undefined"></path>
+
+            <path d="M751 2019.4492273535036Q750.9572564688144 2160.7324288592667 751 2337.753280831113" fill="none"
+              stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="undefined"></path>
+
+            <path
+              d="M1410.5574478869448 2020.5703621905066Q1117.3898824289302 2020.4816678741038 750.0654471472659 2020.5703621905066"
+              fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="undefined"></path>
+
+            <text x="1405" y="1840.4900004069011" fill="white" font-style="normal" font-weight="normal"
+              font-size="28px">
+              <tspan>v</tspan>
+            </text>
+            <rect x="833.35" y="1997.35" width="205.3" height="47.3" rx="2" fill="black" fill-opacity="1" stroke="white"
+              stroke-width="2.7"></rect><text x="866" y="2027.6625005086264" fill="white" font-style="normal"
+              font-weight="normal" font-size="17px">
+              <tspan>Machine Learning</tspan>
+            </text><text x="1222" y="2028.4060002644858" fill="white" font-style="normal" font-weight="normal"
+              font-size="28px">
+              <tspan>&lt;</tspan>
+            </text>
+            <g class="clickable-group" data-group-id="check:classic-advanced-ml">
+              <rect x="788.35" y="2082.35" width="27.3" height="27.3" rx="2" fill="black" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect>
+            </g>
+            <g class="clickable-group" data-group-id="classic-advanced-ml"><text x="834" y="2104.2799997965494"
+                fill="white" font-style="normal" font-weight="normal" font-size="20px">
+                <tspan>Classic ML (Sup. and Unsup.) Advanced ML (Ensembles, NNs)</tspan>
+              </text></g>
+            <g class="clickable-group" data-group-id="ext_link:mlcourse.ai/book/topic01/topic01_intro.html">
+              <rect x="835.35" y="2132.35" width="566.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="854" y="2161.6965001424155" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Open Machine Learning Course - OpenDataScience</tspan>
+              </text><text x="1333" y="2161.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Course</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="ext_link:imp.i384100.net/oqGkrg">
+              <rect x="835.35" y="2186.35" width="564.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="854" y="2215.662500508626" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Machine Learning Specialization</tspan>
+              </text><text x="1332" y="2215.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Course</tspan>
+              </text>
+            </g>
+            <g class="clickable-group"
+              data-group-id="ext_link:microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf">
+              <rect x="835.35" y="2253.35" width="564.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="854" y="2282.6710001627603" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Pattern Recognition &amp; ML by Christopher m. bishop</tspan>
+              </text><text x="1336" y="2282.5860005696613" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>eBook</tspan>
+              </text>
+            </g><text x="745" y="2210.490000406901" fill="white" font-style="normal" font-weight="normal"
+              font-size="28px">
+              <tspan>v</tspan>
+            </text>
+            <path
+              d="M750.1113082938997 2337.5703621905063Q500.6436986104683 2337.494888769458 188.07314291181456 2337.5703621905063"
+              fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="undefined"></path>
+            <rect x="268.35" y="2313.35" width="189.3" height="47.3" rx="2" fill="black" fill-opacity="1" stroke="white"
+              stroke-width="2.7"></rect><text x="305" y="2343.6965001424155" fill="white" font-style="normal"
+              font-weight="normal" font-size="17px">
+              <tspan>Deep Learning</tspan>
+            </text>
+            <g class="clickable-group" data-group-id="check:fully-connected-nn">
+              <rect x="225.35" y="2396.35" width="27.3" height="27.3" rx="2" fill="black" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect>
+            </g>
+            <g class="clickable-group" data-group-id="fully-connected-nn"><text x="268" y="2418.25" fill="white"
+                font-style="normal" font-weight="normal" font-size="20px">
+                <tspan>Fully connected NN, CNN, RNN, LSTM, Transformers, Transfer Learning</tspan>
+              </text></g>
+            <g class="clickable-group" data-group-id="ext_link:imp.i384100.net/Wq9MV3">
+              <rect x="269.35" y="2446.35" width="441.3" height="48.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="285" y="2476.6965001424155" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Deep Learning Specialization</tspan>
+              </text><text x="631" y="2476.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Courses</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="ext_link:www.deeplearningbook.org">
+              <rect x="269.35" y="2502.35" width="441.3" height="48.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="285" y="2532.6965001424155" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Deep Learning Book</tspan>
+              </text><text x="646" y="2532.5860005696613" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>eBook</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="ext_link:arxiv.org/pdf/1706.03762.pdf">
+              <rect x="269.35" y="2559.35" width="441.3" height="48.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="285" y="2589.6880004882814" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Attention is all you need</tspan>
+              </text><text x="649" y="2589.6710001627603" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Paper</tspan>
+              </text>
+            </g>
+            <g class="clickable-group" data-group-id="ext_link:jalammar.github.io/illustrated-transformer/">
+              <rect x="269.35" y="2616.35" width="441.3" height="48.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="285" y="2646.662500508626" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>The Illustrated Transformer</tspan>
+              </text><text x="645" y="2646.6880004882814" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Article</tspan>
+              </text>
+            </g>
+            <path d="M189 2338.9943599119874Q188.94805435564425 2510.6939536352497 189 2725.8250381532625" fill="none"
+              stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="undefined"></path><text x="183" y="2569.490000406901" fill="white" font-style="normal"
+              font-weight="normal" font-size="28px">
+              <tspan>v</tspan>
+            </text>
+            <path
+              d="M836.6514707649372 2725.5703621905063Q548.771936762116 2725.4832677043382 188.07314291181456 2725.5703621905063"
+              fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="undefined"></path>
+            <path d="M839 2497.946742900371Q838.9693726139947 2599.181597124269 839 2726.0238540448777" fill="none"
+              stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="undefined"></path><text x="502" y="2733.154000345866" fill="white" font-style="normal"
+              font-weight="normal" font-size="28px">
+              <tspan>&gt;</tspan>
+            </text><text x="618" y="2344.4060002644856" fill="white" font-style="normal" font-weight="normal"
+              font-size="28px">
+              <tspan>&lt;</tspan>
+            </text><text x="831" y="2654.5520009358725" fill="white" font-style="normal" font-weight="normal"
+              font-size="32px">
+              <tspan>^</tspan>
+            </text>
+            <path
+              d="M1391.851666703077 2497.570362190507Q1146.3177420388504 2497.496078858489 838.6758987848971 2497.570362190507"
+              fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="undefined"></path>
+            <rect x="890.35" y="2474.35" width="123.3" height="47.3" rx="2" fill="black" fill-opacity="1" stroke="white"
+              stroke-width="2.7"></rect><text x="924" y="2503.6370005289714" fill="white" font-style="normal"
+              font-weight="normal" font-size="17px">
+              <tspan>MLOps</tspan>
+            </text>
+            <g class="clickable-group" data-group-id="check:deployment-models">
+              <rect x="892.35" y="2560.35" width="27.3" height="27.3" rx="2" fill="black" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect>
+            </g>
+            <g class="clickable-group" data-group-id="deployment-models"><text x="938" y="2582.3399998982745"
+                fill="white" font-style="normal" font-weight="normal" font-size="20px">
+                <tspan>Deployment models, CI/CD</tspan>
+              </text></g>
+            <g class="clickable-group" data-group-id="ext_link:imp.i384100.net/nLA5mx">
+              <rect x="939.35" y="2607.35" width="405.3" height="46.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="954" y="2636.662500508626" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>MLOps Specialization</tspan>
+              </text><text x="1266" y="2636.6370005289714" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Courses</tspan>
+              </text>
+            </g>
+            <path d="M1392 2497.946742900371Q1391.9554772965355 2645.11076774052 1392 2829.5" fill="none" stroke="white"
+              stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="undefined"></path><text
+              x="1386" y="2683.490000406901" fill="white" font-style="normal" font-weight="normal" font-size="28px">
+              <tspan>v</tspan>
+            </text>
+            <path
+              d="M1392.2721696380759 2829.570362190507Q1104.0658556452224 2829.483168840988 742.9576226568901 2829.570362190507"
+              fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="undefined"></path>
+            <path d="M743 2829.946742900371Q742.9865643259383 2874.3566218499936 743 2930" fill="none" stroke="white"
+              stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="undefined"></path><text
+              x="1169" y="2506.154000345866" fill="white" font-style="normal" font-weight="normal" font-size="28px">
+              <tspan>&gt;</tspan>
+            </text>
+            <text x="1028" y="2837.4060002644856" fill="white" font-style="normal" font-weight="normal"
+              font-size="28px">
+              <tspan>&lt;</tspan>
+            </text>
+            <text x="40%" y="2973.108000691732" fill="white" font-style="normal" font-weight="normal" font-size="28px">
+              <tspan>Keep Learning from Other Sources ^^</tspan>
+            </text>
+            <path d="M742 2996.946742900371Q741.9915328792338 3024.9337130035597 742 3060" fill="none" stroke="white"
+              stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 12"></path>
+            <g class="clickable-group"
+              data-group-id="ext_link:researchgate.net/publication/305997925_Improving_the_Sensitivity_of_Online_Controlled_Experiments_Case_Studies_at_Netflix">
+              <rect x="905.35" y="1320.35" width="464.3" height="40.3" rx="2" fill="#0c8d00" fill-opacity="1"
+                stroke="white" stroke-width="2.7"></rect><text x="918" y="1346.7475001017253" fill="white"
+                font-style="normal" font-weight="normal" font-size="17px">
+                <tspan>Netflix: Stratification</tspan>
+              </text><text x="1308" y="1346.6710001627605" fill="white" font-style="normal" font-weight="normal"
+                font-size="17px">
+                <tspan>Paper</tspan>
+              </text>
+            </g>
+            <path d="M785.9301180883565 3086.1591837857377Q747.3451071322803 3086.1475103553403 699 3086.1591837857377"
+              fill="none" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"
+              stroke-dasharray="0.8 12"></path>
+          </svg>
+
+        </div>
+      </section>
+      <!-- What I'm Reading Section -->
+      <section id="reading" class="content-section">
+        <h1 class="title2">My Bookshelf</h1>
+
+        <div class="top-books">
+          <h2 class="title3">Top Picks</h2>
+          <div class="book-list">
+            <div class="book top-book">
+              <img src="assets/life3.0.jpg" alt="Life 3.0 by Max Tegmark" class="book-cover">
+              <div class="book-info">
+                <h3>Life 3.0</h3>
+                <p class="author">Max Tegmark</p>
+                <p class="description">Add your description here...</p>
+              </div>
+            </div>
+            <div class="book top-book">
+              <img src="assets/canthurtme.jpg" alt="
+              Can't Hurt Me: Master Your Mind and Defy the Odds
+              " class="book-cover">
+              <div class="book-info">
+                <h3>
+                  Can't Hurt Me: Master Your Mind and Defy the Odds
+                </h3>
+                <p class="author">David Goggins</p>
+                <p class="description">Add your description here...</p>
+              </div>
+            </div>
+            <div class="book top-book">
+              <img src="assets/theartoflearning.jpg" alt="The Art of Learning by Josh Waitzkin" class="book-cover">
+              <div class="book-info">
+                <h3>The Art of Learning</h3>
+                <p class="author">Josh Waitzkin</p>
+                <p class="description">Add your description here...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="title3">Other books</h2>
+        <div class="book-categories">
+          <div class="category">
+            <h2>Science Fiction</h2>
+            <div class="book-list">
+              <div class="book">
+                <h3>Dune</h3>
+                <p>Frank Herbert</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2>True Crime</h2>
+            <div class="book-list">
+              <div class="book">
+                <h3>
+                  The Mastermind: Drugs. Empire. Murder. Betrayal.
+                </h3>
+                <p>Evan Ratliff</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2>Philosophy / Social Commentary</h2>
+            <div class="book-list">
+              <div class="book">
+                <h3>Hagakure</h3>
+                <p>Yamamoto Tsunetomo</p>
+              </div>
+              <div class="book">
+                <h3>
+                  El discreto. Oráculo manual y arte de prudencia
+                </h3>
+                <p>Baltasar Gracián</p>
+              </div>
+              <div class="book">
+                <h3>Bronze Age Mindset</h3>
+                <p>Bronze Age Pervert</p>
+              </div>
+              <div class="book">
+                <h3>Invitation to Sociology: A Humanistic Perspective </h3>
+                <p>Peter L. Berger</p>
+              </div>
+              <div class="book">
+                <h3>Antifragile</h3>
+                <p>Nassim Nicholas Taleb</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2>Biography</h2>
+            <div class="book-list">
+              <div class="book">
+                <h3>Napoleon: A Life</h3>
+                <p>Andrew Roberts</p>
+              </div>
+              <div class="book">
+                <h3>Leonardo da Vinci</h3>
+                <p>Walter Isaacson</p>
+              </div>
+              <div class="book">
+                <h3>
+                  Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future
+                </h3>
+                <p>Ashlee Vance</p>
+              </div>
+              <div class="book">
+                <h3>Steve Jobs</h3>
+                <p>Walter Isaacson</p>
+              </div>
+              <div class="book">
+                <h3>
+                  American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer
+                </h3>
+                <p>Kai Bird and Martin J. Sherwin</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2>History</h2>
+            <div class="book-list">
+              <div class="book">
+                <h3>
+                  Los enemigos del comercio I
+                </h3>
+                <p>Antonio Escohotado</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2>Fiction</h2>
+            <div class="book-list">
+              <div class="book">
+                <h3>Infinite Jest</h3>
+                <p>David Foster Wallace</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2>Memoir</h2>
+            <div class="book-list">
+              <div class="book">
+                <h3>Storm of Steel</h3>
+                <p>Ernst Jünger</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2>Technology</h2>
+            <div class="book-list">
+              <div class="book">
+                <h3>
+                  Out of the Ether: The Amazing Story of Ethereum and the $55 Million Heist that Almost Destroyed It All
+                </h3>
+                <p>Matthew MacAdam Leising
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2>Mythology</h2>
+            <div class="book-list">
+              <div class="book">
+                <h3>The Power of Myth</h3>
+                <p>Joseph Campbell</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2>Fitness</h2>
+            <div class="book-list">
+              <div class="book">
+                <h3>
+                  Functional Training and Beyond: Building the Ultimate Superfunctional Body and Mind
+                </h3>
+                <p>Adam Sinicki</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2>Psychology</h2>
+            <div class="book-list">
+              <div class="book">
+                <h3>Prometheus Rising</h3>
+                <p>Robert Anton Wilson</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2>Personal Finance</h2>
+            <div class="book-list">
+              <div class="book">
+                <h3>Rich Dad Poor Dad</h3>
+                <p>Robert Kiyosaki and Sharon Lechter
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2>Anthropology</h2>
+            <div class="book-list">
+              <div class="book">
+                <h3>
+                  Sapiens: A Brief History of Humankind
+                </h3>
+                <p>Yuval Noah Harari</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="category">
+            <h2>Economics</h2>
+            <div class="book-list">
+              <div class="book">
+                <h3>CIVITAS: ECONOMÍA ESPAÑOLA. UNA INTRODUCCIÓN 6º EDICION</h3>
+                <p>José Luis García Delgado and Rafael Myro</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="content-section" style="display: none; height: 100vh;">
+        <iframe id="resume-frame" src="" width="100%" height="100%"></iframe>
+      </section>
+
+    </div>
+  </div>
+  <!-- Contact Info Modal -->
+  <div id="contact-info-modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close" onclick="closeContactInfo()">&times;</span>
+      <h2>Contact Info</h2>
+      <p>Email: <a href="mailto:ijaddidouieb@gmail.com" target="_blank">ijaddidouieb@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/iliasjaddi/" target="_blank">iliasjaddi</a></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <footer id="footer">
+    <div id="phrase-container">Built by <a id="url-footer" href="https://iliasjaddi.com">Ilias Jaddi</a></div>
+  </footer>
+
+
+</body>
+
+</html>

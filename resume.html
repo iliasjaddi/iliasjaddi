@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Profile Section -->
+    <section id="profile" class="container">
+        <div class="section__text">
+            <h1 class="title">Ilias Jaddi</h1>
+            <p class="section__text__p2">Economics and AI/ML Student</p>
+            <div class="location-container">
+                <span class="location-text">
+                    Barcelona, Spain </span> <span class="location-flag">🇪🇸</span>
+            </div>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="displayResume()">Display Resume</button>
+                <button class="btn btn-color-1" onclick="showContactInfo()">Contact Info</button>
+            </div>
+        </div>
+        <div class="section__pic-container">
+            <img src="./assets/iliasjdprofile.png" alt="Ilias Jaddi profile picture">
+        </div>
+    </section>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="main-nav" class="container">
+        <ul class="nav-links">
+            <li><a href="index.html#about" onclick="showSection('about')">About</a></li>
+            <li><a href="index.html#projects" onclick="showSection('projects')">Projects</a></li>
+            <li><a href="index.html#learning" onclick="showSection('learning')">Learning AI/ML</a></li>
+            <li><a href="index.html#reading" onclick="showSection('reading')">What I'm Reading</a></li>
+        </ul>
+    </nav>
+
+    <!-- Resume Section -->
+    <section id="resume" class="content-section" style="height: 100vh; display: block;"">
+        <iframe id=" resume-frame" src="./assets/iliasjaddicv.pdf" width="100%" height="100%"></iframe>
+    </section>
+
+    <script src="script.js"></script>
+    <!-- Contact Info Modal -->
+    <div id="contact-info-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeContactInfo()">&times;</span>
+            <h2>Contact Info</h2>
+            <p>Email: <a href="mailto:ijaddidouieb@gmail.com" target="_blank">ijaddidouieb@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/iliasjaddi/" target="_blank">iliasjaddi</a></p>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div id="phrase-container">Built by <a id="url-footer" href="https://iliasjaddi.com">Ilias Jaddi</a></div>
+    </footer>
+</body>
+
+</html>
