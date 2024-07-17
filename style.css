@@ -348,6 +348,11 @@ p {
   /* Optional: Add border radius */
 }
 
+p.experience-description {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
 .work-experience-container .section__text__p1,
 .experience-details-container h2,
 .work-experience-container .title {
@@ -611,6 +616,7 @@ p {
   margin: 0;
   font-size: 0.95rem;
   color: #ffffff;
+  text-align: justify;
   /* Changed to white for better contrast on black background */
 }
 
